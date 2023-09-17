@@ -1,0 +1,455 @@
+/* for over all page */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+}
+/* for over all page -end*/
+
+/* for fixed top bar -start */
+#sticked {
+    position: sticky;
+}
+
+/* for logo title phno -start */
+#heads {
+    background: #f7992c;
+    width: auto;
+    height: 209px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 20px #3498db;
+    top: 0;
+    width: 100%;
+    position: static;
+}
+
+#heads_name {
+    font-family: sans-serif;
+    font-size: xx-large;
+    display: flex;
+    text-align: left;
+    margin: 0px;
+    align-items: center;
+    color: white;
+    
+}
+
+#heads_info {
+    font-family: sans-serif;
+    font-size: xx-large;
+    justify-content: flex-end;
+    float: right;
+}
+/* for logo title phno -end */
+
+
+/* for nav bar options -start */
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2c3e50;
+    height: 100px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: left;
+}
+
+#navbar ul li a {   
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+#navbar select {
+    font-size: large;
+    border-radius: 5px;
+    height: 40px;
+}
+/* for nav bar options -end */
+
+
+/* for fixed top bar -start */
+#find_doc {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(210, 105, 30, 0.543);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#find_doc div h3 a {
+    color: black;
+}
+/* for fixed top bar -end */
+
+/* for other service options -start */
+#other_serv h2 {
+    text-align: center;
+}
+
+#servs {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+/* for other service options -end */
+
+
+/* for footer -start */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+    margin-top: 50px;
+    padding: 20px;
+}
+/* for footer -end */
+
+/* for creators info -start */
+#creator_info{
+    text-align: center;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(143, 143, 143, 0.856);
+}
+/* for creators info -start */
+
+/* for 3 options -start */
+#options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#options li {
+    list-style: none;
+    margin: 0 1.4rem;
+}
+
+#options li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 9rem;
+    height: 3rem;
+    background: #fff;
+    padding-left: 1.25rem;
+    position: relative;
+    transition: 0.5s;
+}
+
+#options li a::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 1.25rem;
+    background: #cecece;
+    transition: 0.5s;
+    transform: skewY(-45deg);
+}
+
+#options li a::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 1.25rem;
+    width: 100%;
+    background: #cecece;
+    transition: 0.5s;
+    transform: skewX(-45deg);
+}
+
+#options  li:hover a {
+    background: #dd4b39;
+    transform: translate(15px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+#options li:hover a::before {
+    background: #b33a2b;
+}
+
+#options li:hover a::after {
+    background: #b33a2b;
+}
+/* for 3 options -end */
+
+/* for horizontal bar -start*/
+.div_for_hr{
+    margin: 8px;
+    display: flex;
+    justify-content: center;  
+}
+
+hr{
+    width: 85%;
+}
+/* for horizontal bar -end*/
+
+/* for directory info -start*/
+.directory-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0%;
+    background-color: #f7992c;
+    padding-top: 10px;
+}
+
+.directory-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem 2rem 5rem;
+    background-color: white;
+    margin: 0 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .2s all linear;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+.directory-item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 1rem 1rem 0rem #753a93;
+}
+
+.directory-item li {
+    list-style: none;
+}
+
+.directory-item pre{
+    font-family: serif;
+    text-align: center;
+    font-size: larger;
+}
+
+.content {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: skyblue;
+    font-weight: bold;
+}
+
+.directory-title {
+    font-size: 1.3rem;
+    background-color: skyblue;
+    padding: .7rem 1.5rem;
+    margin: 0px;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.directory-item:hover .directory-title {
+    box-shadow: 0 0 0 50rem skyblue;
+}
+
+.directory-item:hover .view-btn {
+    background-color: skyblue;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+}
+
+.directory-item:hover .content {
+    color: black;
+    transition: .4s linear;
+}
+
+.view-btn {
+    border: none;
+    border: 2px solid skyblue;
+    background-color: transparent;
+    color: skyblue;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: .7rem 1rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+.view-btn:hover {
+    background-color: skyblue;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+}
+/* for directory info -end*/
+
+/* for popup media -start*/
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.689);
+}
+
+.popup-content {
+      box-shadow: 0 5px 8px rgb(226, 197, 31);
+    background-color: #fefefe;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.popup-content img{
+    height: 400px;
+    width: 600px;
+}
+
+  .popup-content video{
+      height: 400px;
+    width: 600px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* for popup media -end*/
+
+
+/* for dropdown menu -start*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #dd4b39;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn .5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+}
+
+  .dropdown-content a {
+    color: black;
+    background-color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+  
+/* for dropdown menu -end*/
+
+/* for south guj pages css -start */
+.dr_info-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-main {
+    height: 100px;
+    width: 12rem;
+    border-radius: 1rem;
+    position: relative;
+    transform-style: preserve-3d;
+    justify-content: center;
+    transition: all .4s ease;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.front-card {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    border-radius: 1rem;
+    background-image: linear-gradient(to top right, rgb(228, 135, 4), rgb(166, 0, 212));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.front-card a {
+    /* margin-top: 1rem; */
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+.front-card p{
+    font-size: 1rem;
+}
+
+.btn {
+    margin-top: 1rem;
+    
+}
+
+
+
+.back-light {
+    color: #fff;
+}
+/* for south guj pages css -end */
